@@ -63,6 +63,9 @@ nav .links a {
 nav .links a:hover {
     background-color: rgb(62, 233, 0);
 }
+nav h2{
+    color: orangered;
+}
 
 /* Logout */
 .logout {
@@ -113,7 +116,7 @@ nav .links a:hover {
 <body>
     
 <nav>
-
+<h2>TheLogBuddy</h2>
 <div class="links">
     <a href="Index.php">Home</a>
     <a href="courses.php">Courses</a>
