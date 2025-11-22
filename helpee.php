@@ -265,27 +265,33 @@ if (mysqli_num_rows($result)>0) {
     $fnHelpDescri=$selectHelpdata['HelpDecri'];
     $fnHelpId=$selectHelpdata['helpid'];
 
-    // $toHelpId=$data['helpeehelpid'];
 
-    // $helpcheck=mysqli_num_rows(mysqli_query($connection,"SELECT * from helpee where helpeehelpid='$toHelpId'"));
-    // if ($helpcheck>0) {
+    $helpcheck=mysqli_num_rows(mysqli_query($connection,"SELECT * from masteredcourse where courseid='$courseId' and userid='$fromuser'"));
+    if ($helpcheck>0) {
         
-    // }else {
+        echo "
+    <table cellspacing=0>
+    <tr><td colspan=4><span>".$fnUsername."</span> Mastered <span>".$fnCoursename."</span> Keepup the Good work!!</td></tr>
+    <tr><td colspan=4>".$fnDescri."</td></tr>
+    </table>
+    <br>
+    ";
+
+    }else {
         
-  
     echo "
     <table cellspacing=0>
     <tr><td colspan=3>".$fnUsername."</td><td><span><div class='addiv2'>".$data['datee']."</div></span></td></tr>
     <tr><td colspan=4>".$fnCoursename."</td></tr>
-    <tr><td colspan=3>Location</td><td><div class='addiv2'>".$fnDescri."</div></td></tr>
-    <tr><td colspan=3>Time</td><td><div class='addiv2'>".$fnDescri."</div></td></tr>
+    <tr><td colspan=3>Location</td><td><div class='addiv2'>".$data['locationn']."</div></td></tr>
+    <tr><td colspan=3>Time</td><td><div class='addiv2'>".$data['timee']."</div></td></tr>
     <tr><td colspan=3>".$fnDescri."</td><td><span><div class='addiv2'>Status</div></span></td></tr>
     <tr><td colspan=3>".$fnHelpDescri."</td><td><div class='adddiv'>Pending....</div></td></tr>
     </table>
     <br>
     ";
     
-    // }
+    }
 
 }
 }else {
