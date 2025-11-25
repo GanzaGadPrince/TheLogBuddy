@@ -8,7 +8,7 @@ if(!isset($_SESSION['userid'])){
 $userid = $_SESSION['userid'];
 }
 
-$connection=mysqli_connect("mainline.proxy.rlwy.net","root","fzLHpKHjmWBMpfJqLYebwNESuGgOmNUW","railway",3306);
+$connection=mysqli_connect("mainline.proxy.rlwy.net","root","fzLHpKHjmWBMpfJqLYebwNESuGgOmNUW","railway","41171");
 
 if (!$connection) {
     die("Database Connection Failed: " . mysqli_connect_error());
