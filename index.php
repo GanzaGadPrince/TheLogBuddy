@@ -1,7 +1,7 @@
 <?php
 
 include("nav.php");
-$connection=mysqli_connect("sql5.freesqldatabase.com","sql5809449","XFZKmg35Fl","sql5809449");
+$connection=mysqli_connect("sql5.freesqldatabase.com","sql5809449","XFZKmg35Fl","sql5809449",3306);
 if (!isset($_SESSION['userid'])) {
     $userid = '0';
 }else{
