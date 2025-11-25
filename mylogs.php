@@ -3,7 +3,9 @@
 include("nav.php");
 $connection=mysqli_connect("sql5.freesqldatabase.com","sql5809449","XFZKmg35Fl","sql5809449",3306);
 
-
+if (!$connection) {
+    die("Database Connection Failed: " . mysqli_connect_error());
+}
 
 
 $formCourseName="";
