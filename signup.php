@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 session_start();
 
-$connection=mysqli_connect("sql5.freesqldatabase.com","sql5809449","XFZKmg35Fl","sql5809449","3306");
-
+$connection=mysqli_connect("mainline.proxy.rlwy.net","root","fzLHpKHjmWBMpfJqLYebwNESuGgOmNUW","railway","3306");
+// mysql://root:fzLHpKHjmWBMpfJqLYebwNESuGgOmNUW@mainline.proxy.rlwy.net:41171/railway
 if (!$connection) {
     die("Database Connection Failed: " . mysqli_connect_error());
 }else {
