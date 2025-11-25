@@ -2,7 +2,7 @@
 
 session_start();
 
-$connection=mysqli_connect("localhost","root","","thelogbuddy");
+$connection=mysqli_connect("sql5.freesqldatabase.com","sql5809449","XFZKmg35Fl","sql5809449");
 
 
 ?>

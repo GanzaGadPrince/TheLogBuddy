@@ -7,7 +7,7 @@ if(!isset($_SESSION['userid'])){
 $userid = $_SESSION['userid'];
 }
 
-$connection=mysqli_connect("localhost","root","","thelogbuddy");
+$connection=mysqli_connect("sql5.freesqldatabase.com","sql5809449","XFZKmg35Fl","sql5809449");
 
 $learnCourseName = "";
 $learnCourseDescri = "";

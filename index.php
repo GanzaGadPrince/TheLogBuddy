@@ -1,7 +1,7 @@
 <?php
 
 include("nav.php");
-$connection=mysqli_connect("localhost","root","","thelogbuddy");
+$connection=mysqli_connect("sql5.freesqldatabase.com","sql5809449","XFZKmg35Fl","sql5809449");
 if (!isset($_SESSION['userid'])) {
     $userid = '0';
 }else{
