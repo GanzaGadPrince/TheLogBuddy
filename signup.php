@@ -7,8 +7,6 @@ $connection=mysqli_connect("mainline.proxy.rlwy.net","root","fzLHpKHjmWBMpfJqLYe
 // mysql://root:fzLHpKHjmWBMpfJqLYebwNESuGgOmNUW@mainline.proxy.rlwy.net:41171/railway
 if (!$connection) {
     die("Database Connection Failed: " . mysqli_connect_error());
-}else {
-    echo "Connected!";
 }
 
 ?>

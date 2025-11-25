@@ -7,8 +7,6 @@ $connection=mysqli_connect("mainline.proxy.rlwy.net","root","fzLHpKHjmWBMpfJqLYe
 
 if (!$connection) {
     die("Database Connection Failed: " . mysqli_connect_error());
-}else {
-    echo "Connected!";
 }
 
 $checkadmin=mysqli_query($connection,"SELECT * from users");
