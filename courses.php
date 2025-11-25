@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 include("nav.php");
 if(!isset($_SESSION['userid'])){
     $userid='0';
